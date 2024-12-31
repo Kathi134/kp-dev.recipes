@@ -1,0 +1,128 @@
+label {
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.4rem;
+}
+
+label.default {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    border: 1px solid var(--mediumgrey);
+    border-radius: 0.25rem;
+    outline: none;
+    padding: 0.469rem;
+    margin:1px;
+    caret-color : var(--darkgrey);
+}
+
+input.error, textarea.error {
+    border: 1px solid var(--primary-highlight);
+}
+
+input:focus-visible, textarea:focus-visible {
+    margin: 0;
+    border: 2px solid var(--secondary-highlight);
+}
+
+textarea {
+    resize: none;
+    height: 7rem;
+}
+
+input[type=number] {
+    width: 5rem;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 35%;
+}
+
+dialog {
+    position: fixed;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 0px;
+    width: 70%;
+    z-index: 1000;
+    top: 40%;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(0.15rem);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent-mediumgrey);
+    backdrop-filter: blur(0.15rem);
+    z-index: 999;
+}
+
+dialog p {
+    color: var(--darkgrey);
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.save-next-to-select {
+    padding-top: 0.7rem;
+}
+
+#workoutitem-save-btn-container {
+    /* display: contents; */
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+
+.border {
+    border: 1px solid var(--primary-highlight);
+}
+
+.add-set-btn {
+    color: var(--darkgrey);
+    font-size: 1rem;
+    border: 1px solid var(--mediumgrey);
+    border-radius: 0.25rem;
+    outline: none;
+    padding: 0.469rem;
+    margin: 1px;
+}
+
+.no-bottom-padding {
+    padding-bottom: 0;
+}
+
+.sets {
+    padding: 0.469rem;
+    padding-bottom: 0;
+}
+
+.sets.border {
+    border: 1px solid var(--mediumgrey);
+    border-radius: 0.25rem;
+    padding: 0.469rem;
+}
+
+.fixed-width {
+    width: 1.7rem;
+}

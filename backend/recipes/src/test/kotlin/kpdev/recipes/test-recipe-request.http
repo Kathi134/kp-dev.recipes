@@ -2,14 +2,17 @@
 GET http://localhost:8080/recipes
 Authorization: Bearer <auth_token>
 
+###
 # Test: Get recipe by name
 GET http://localhost:8080/recipes/Spaghetti
 Authorization: Bearer <auth_token>
 
+###
 # Test: Get recipe by ID
 GET http://localhost:8080/recipes/id/{id}
 Authorization: Bearer <auth_token>
 
+###
 # Test: Create recipe
 POST http://localhost:8080/recipes
 Authorization: Bearer <auth_token>
@@ -23,6 +26,7 @@ Content-Type: application/json
   "stepDescriptions": ["Boil pasta", "Cook sauce"]
 }
 
+###
 # Test: Update recipe
 PUT http://localhost:8080/recipes/{id}
 Authorization: Bearer <auth_token>
@@ -36,6 +40,7 @@ Content-Type: application/json
   "stepDescriptions": ["Boil pasta", "Cook sauce"]
 }
 
+###
 # Test: Delete recipe
 DELETE http://localhost:8080/recipes/{id}
 Authorization: Bearer <auth_token>

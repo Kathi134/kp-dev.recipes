@@ -43,4 +43,6 @@
         - unit: str
         - groceryName: str
 - DELETE
-    - /shopping/items/{id}
+    - /shopping-list/items/{id}
+    - /shopping-list/items
+        - where checked is true -> TODO: model update for check / no check

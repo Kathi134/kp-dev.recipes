@@ -12,7 +12,7 @@ data class RecipeComponent(
     @Column
     val name: String? = null,
 
-    @OneToMany(mappedBy = "componentRecipe", cascade = [CascadeType.ALL], orphanRemoval = true)
+    @OneToMany(cascade = [CascadeType.ALL], orphanRemoval = true)
     val ingredients: List<QuantityInformation> = mutableListOf(),
 
     @ManyToOne

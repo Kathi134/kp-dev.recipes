@@ -2,11 +2,13 @@
 GET http://localhost:8080/shopping-list
 Authorization: Bearer <auth_token>
 
+###
 # Test: Add recipe to shopping list
 PATCH http://localhost:8080/shopping-list/items/recipe
 Authorization: Bearer <auth_token>
 recipeId=123e4567-e89b-12d3-a456-426614174001
 
+###
 # Test: Add item to shopping list
 PATCH http://localhost:8080/shopping-list/items
 Authorization: Bearer <auth_token>
@@ -18,6 +20,7 @@ Content-Type: application/json
   "groceryName": "Apples"
 }
 
+###
 # Test: Remove item from shopping list
 DELETE http://localhost:8080/shopping-list/items/{id}
 Authorization: Bearer <auth_token>

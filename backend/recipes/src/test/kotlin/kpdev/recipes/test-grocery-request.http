@@ -2,10 +2,12 @@
 GET http://localhost:8080/groceries
 Authorization: Bearer <auth_token>
 
+###
 # Test: Get grocery by name
 GET http://localhost:8080/groceries/Milk
 Authorization: Bearer <auth_token>
 
+###
 # Test: Create grocery
 POST http://localhost:8080/groceries
 Authorization: Bearer <auth_token>
@@ -15,6 +17,7 @@ Content-Type: application/json
   "name": "Eggs"
 }
 
+###
 # Test: Delete grocery by name
 DELETE http://localhost:8080/groceries/Milk
 Authorization: Bearer <auth_token>

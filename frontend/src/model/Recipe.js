@@ -55,7 +55,7 @@ class ShoppingList {
             this.list.push(quantityInformation);
         
         this.addRecipe = (recipe) => 
-            recipe.componentRecipes.map(x => x.ingredients).forEach(x => this.list.add(x));
+            recipe.componentRecipes.flatMap(x => x.ingredients).forEach(x => this.list.push(x));
     }
 }
 

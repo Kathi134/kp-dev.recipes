@@ -10,8 +10,10 @@ function CircleButtonIcon({icon, color, size}) {
         'save': IoIosCheckmarkCircle,
         'edit': RiEditCircleFill,
         'delete': IoMdCloseCircle,
+        'close': IoMdCloseCircle,
         'tiny-add': HiPlus,
         'tiny-delete': RxCross2,
+        'tiny-close': RxCross2,
     }
     return OPTION_ICONS[icon]({color: color ??'var(--primary-highlight)', size: size ?? "1.7rem"});
 }

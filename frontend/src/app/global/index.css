@@ -252,3 +252,6 @@ th, td {
     margin-left: 0.5rem;
 }
 
+.gap-05 {
+    gap: 0.5rem;
+}

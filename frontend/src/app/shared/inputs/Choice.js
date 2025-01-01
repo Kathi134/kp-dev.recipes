@@ -16,7 +16,7 @@ export default function Choice({isOpen, options, optionIcons, onOptionClick, opt
         <dialog open={open} >
             <p>{text}</p>
             <div className='vertical-container center top-margin'>
-                <div className='vertical-container'>
+                <div className='vertical-container gap-05'>
                     {options.map((option, i) =>
                         <div key={i} className="horizontal-container" onClick={() => handleOptionClick(optionValues[i])}>
                             <div className="icon-box padding-right">

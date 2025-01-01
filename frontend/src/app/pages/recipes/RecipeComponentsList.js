@@ -58,11 +58,11 @@ export function RecipeComponentsList({ componentRecipes, setComponentRecipes, de
                     <tr key={recipeIndex}><td className="vertical-container">
                         <div className="horizontal-container between">
                             <input type="text" defaultValue={defaultComponentName} value={recipe.name !== '' ? recipe.name : defaultComponentName} onChange={(e) => handleComponentChange(recipeIndex, "name", e.target.value)} />
-                            <div className="vertical-container center">
+                            {componentRecipes.length > 1 && <div className="vertical-container center">
                                 <SimpleCircleButton
                                     icon="delete" color="var(--mediumgrey)" size="1.1rem"
                                     onClick={(event) => deleteComponentRecipe(event, recipeIndex)} />
-                            </div>
+                            </div>}
                         </div>
                         <label htmlFor={`component-${recipeIndex}`}>Name der Komponente</label>
 

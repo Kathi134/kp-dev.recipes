@@ -27,7 +27,7 @@ fun QuantityInformation.asDtoResponse(): QuantityInformationDtoResponse =
 
 fun QuantityInformationDtoRequest.asEntity(userId: UUID, groceryService: GroceryService): QuantityInformation =
     QuantityInformation(
-        grocery = groceryService.getGrocery(groceryName) ?: throw NoSuchElementException(),
+        grocery = groceryService.get(userId, groceryName) ?: throw NoSuchElementException(),
         quantity = quantity,
         unit = unit,
         userId = userId

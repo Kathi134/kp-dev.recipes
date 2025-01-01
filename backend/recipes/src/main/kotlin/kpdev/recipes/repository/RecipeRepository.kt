@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository
 import java.util.UUID
 
 interface RecipeRepository : JpaRepository<Recipe, UUID>{
-    fun findByName(name: String): List<Recipe>
+    fun findByUserId(userId: UUID): List<Recipe>
+    fun findByUserIdAndName(userId: UUID, name: String): Recipe?
+    fun findByUserIdAndId(userId: UUID, id: UUID): Recipe?
 }
